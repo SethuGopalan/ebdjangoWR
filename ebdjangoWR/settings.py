@@ -25,7 +25,7 @@ SECRET_KEY = 'hk=am4o3(^r+hw-x#csw018tnb^=9sshqz(+760-hm#wua0^f='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'ebdjangoWR.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["weather / templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
