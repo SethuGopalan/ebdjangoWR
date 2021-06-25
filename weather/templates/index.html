@@ -2,54 +2,150 @@
 <html lang="en">
 <head>
 <meta charset="UFF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> 
 <title>WeatherApp</title>
 
-<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<div class="container">
+    <div class="card card-1">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul> <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel">
+                    <div class="row">
+                        <div class="col-12">
+                            <div align="center">
+                            <h1> Weather in your City </h1>
+                            <span class="subtitle">{{city_weather.temperature}}° F</span>
+                            <span class="title">{{city_weather.city}}</span>
+                            <br>{{city_weather.description}}
+                            <form action="" method="get">
+                            <input type="text" id="city" name="city" placeholder="Enter city">
+                            <input type="submit" name ="send" value="Search"
+                        </div>
+                        <div class="col-6 justify-content-center"> <img class="img-fluid" src="https://img.icons8.com/plasticine/100/000000/sun.png"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="card card-1">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul> <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12">
+                            <div align="left">
+                            <h1> Weather in other City </h1>
+                            <span class="subtitle">{{city_weather1.temperature}}° F</span>
+                            <span class="title">{{city_weather1.city}}</span>
+                            <br>{{city_weather1.description}}
+                            
+                        </div>
+                        <div class="col-6 justify-content-center"> <img class="img-fluid" src="https://img.icons8.com/plasticine/100/000000/sun.png"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="card card-1">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul> <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel">
+                    <div class="row">
+                        <div class="col-12">
+                            <div align="right">
+                            <h1> Weather in other City </h1>
+                            <span class="subtitle">{{city_weather2.temperature}}° F</span>
+                            <span class="title">{{city_weather2.city}}</span>
+                            <br>{{city_weather2.description}}
+                            
+                        </div>
+                        <div class="col-6 justify-content-center"> <img class="img-fluid" src="https://img.icons8.com/plasticine/100/000000/sun.png"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    
+    
+    <div class="card card-2">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0"></li>
+                <li data-target="#demo" data-slide-to="1" class="active"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul> <!-- The slideshow -->
+            <div class="carousel-center">
+                <div class="carousel">
+                    <div class="row">
+                        <div class="row">
+                            
+                            <div class="row row1">{{city_weather.temperature}}° F</div>
+                            <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/ios/100/000000/sun.png" /></div>
+                            <div class="row row3"><time>{{city_weather.time}}2:00</div>
+                            <div class="row row4">PM</div>
+                        </div>
+                        <div class="col">
+                            <div class="row row1">{{city_weather.temperature}}° F;</div>
+                            <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/ios/100/000000/sun.png" /></div>
+                            <div class="row row3"><time>{{city_weather.time}}1:00</div>
+                            <div class="row row4">PM</div>
+                        </div>
+                        <div class="col">
+                            <div class="row row1">{{city_weather.temperature}}° F</div>
+                            <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/windows/100/000000/cloud.png" /></div>
+                            <div class="row row3"><time>{{city_weather.time}}2:00</div>
+                            <div class="row row4">PM</div>
+                        </div>
+                        <div class="col">
+                            <div class="row row1">{{city_weather.temperature}}° F</div>
+                            <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/windows/100/000000/cloud.png" /></div>
+                            <div class="row row3"><time>{{city_weather.time}}3:00</div>
+                            <div class="row row4">PM</div>
+                        </div>
+                        <div class="col">
+                            <div class="row row1">{{city_weather.temperature}}° F</div>
+                            <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/cotton/64/000000/rain--v3.png" /></div>
+                            <div class="row row3"><time>{{city_weather.time}}4:00</div>
+                            <div class="row row4">PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<td class="tdStyle">        
 
-</head>
-<body>
-
-<div align="center">
-<h1> Weather in your City </h1>
-<span class="title">{{city_weather.city}}</span>
-
-<br>
-<div class"media-content">
-<div class="content">
-<p>
-<div
-  {% comment %} style="background-image: url('https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg');" {% endcomment %}
-</div>
-<h2>HTML Image</h2>
-<img src="weather\templates\Picture\maxwell-nelson-KXkgOigCqj0-unsplash.jpg">
-
-<span class="subtitle">{{city_weather.temperature}}° F</span>
-<br>{{city_weather.description}}
-{% comment %} <span class="subtitle">{{city_weather.temperature}}° F</span>
-<br>{{city_weather.description}} {% endcomment %}
-<form action="" method="get">
-<input type="text" id="city" name="city" placeholder="Enter city">
-<input type="submit" name ="send" value="Search"
-
-<div align="center">
-<h1> Weather in other City </h1>
-
-<span class="title">{{city_weather1.city}}</span>
-<span class="subtitle">{{city_weather1.temperature}}° F</span>
-<br>{{city_weather1.description}}
-
-<div align="center">
-<h1> Weather in Your  State </h1>
-<span class="title">{{city_weather2.city}}</span>
-<span class="subtitle">{{city_weather2.temperature}}° F</span>
-<br>{{city_weather2.description}}
-
+    <dic class="background">
+    <img src="/static/maxwell-nelson-KXkgOigCqj0-unsplash.jpg" class = "body  w-100" alt="..."> 
+<h1>
 
 
 </p>
 <div
-  style="background-image: url('https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg');"
+  
+
 </div>
 
 </div>
